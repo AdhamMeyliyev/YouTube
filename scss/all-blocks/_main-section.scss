@@ -1,0 +1,168 @@
+.main--section{
+   
+    .container{
+        @include d-flex;
+    }
+}
+
+.main--section--left{
+    width: 240px;
+    height: 844px;
+    background-color: #212121;
+}
+
+.main--section--right{
+    width: 1380px;
+    height: 844px;
+    background-color: #333;
+}
+
+.main--section--left__list{
+    margin-left: 26px;
+}
+
+.main--section--left__list{
+
+    .main--section--left__list1, .main--section--left__list2, .main--section--left__list3,.main--section--left__list4{
+        a{
+            font-size: 14px;
+            color:#ffffff96;
+            padding-left: 24px;
+        }
+
+    }
+}
+
+.main--section--left__list1::before{
+    content:url(/assets/icon/home.svg);
+    position: relative;
+    top:5px ;
+}
+
+.main--section--left__list2::before{
+    content:url(/assets/icon/trends.svg);
+    position: relative;
+    top:5px ;
+}
+
+.main--section--left__list3::before{
+    content:url(/assets/icon/subs.svg);
+    position: relative;
+    top:5px ;
+}
+
+.main--section--left__list4::before{
+    content:url(/assets/icon/originals.svg);
+    position: relative;
+    top:5px ;
+}
+
+.main--section--left__list1_1::before{
+    content:url(/assets/icon/library.svg);
+    position: relative;
+    top:5px ;
+}
+
+.main--section--left__list2_2::before{
+    content:url(/assets/icon/history.svg);
+    position: relative;
+    top:5px ;
+}
+
+.main--section--left__list3_3::before{
+    content:url(/assets/icon/your-videos.svg);
+    position: relative;
+    top:5px ;
+}
+
+.main--section--left__list4_4::before{
+    content:url(/assets/icon/your-movie.svg);
+    position: relative;
+    top:5px ;
+}
+
+.main--section--left__list5::before{
+    content:url(/assets/icon/watch-icon.svg);
+    position: relative;
+    top:5px;
+    right: -4px;
+}
+
+
+.main--section--left__list {
+    margin-top:  12px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main--section--left__hr{
+    width: 240px;
+    height: 1px;
+    background-color: #424242;
+}
+
+//////////////////////////////////////////////////////////////////////
+
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+

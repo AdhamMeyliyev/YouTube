@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../css/main.css")
+        title YouTube
+    body 
+        section.header 
+            .container
+                .header--left
+                    img(src="../assets/icon/menu.svg", alt="menu").header--left__icon-menu
+                    img(src="../assets/logo/youtube-logo.svg", alt="youtub-logo").header__you-tube__logo
+                .header--center
+                    form.header--center__form
+                        input(type="text" placeholder="Search").header--center__form__search-input
+                        button.header__search__btn #[img(src="../assets/icon/search.svg", alt="search").search--icon]
+                .header--right
+                    img(src="../assets/icon/header-button--icon1.svg", alt="icon-zoom").header--right__icon
+                    img(src="../assets/icon/header-button-icon2.svg", alt="icon-zoom").header--right__icon
+                    img(src="../assets/icon/header-button--icon3.svg", alt="icon-zoom").header--right__icon
+                    img(src="../assets/icon/sub-photo.svg", alt="icon-zoom").header--right__icon
+
+        main.main   
+            section.main--section
+                .container 
+                    .main--section--left 
+                        ol.main--section--left__list 
+                            li.main--section--left__list1 #[a(href="#") home] 
+                            li.main--section--left__list2 #[a(href="#") Trends] 
+                            li.main--section--left__list3 #[a(href="#") Subscriptions] 
+                            li.main--section--left__list4 #[a(href="#") Originals] 
+                        .main--section--left__hr
+
+                        ol.main--section--left__list 
+                            li.main--section--left__list1.main--section--left__list1_1 #[a(href="#") Library] 
+                            li.main--section--left__list2.main--section--left__list2_2 #[a(href="#") History] 
+                            li.main--section--left__list3.main--section--left__list3_3 #[a(href="#") Your videos] 
+                            li.main--section--left__list4.main--section--left__list4_4 #[a(href="#") Watch later] 
+                            li.main--section--left__list4.main--section--left__list5 #[a(href="#") Originals] 
+
+                            <div class="custom-select" style="width:200px;">
+                                <select>
+                                    <option value="0">Select car:</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                                </div>
+                        .main--section--left__hr
+                    .main--section--right

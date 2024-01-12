@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  overflow:hidden;
+}
+
+
+@mixin d-flex{
+  display: flex;
+  align-items: center;
+}
+
+@mixin j-content-sb{
+  justify-content: space-between;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
